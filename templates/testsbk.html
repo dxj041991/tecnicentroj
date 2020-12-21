@@ -1,0 +1,365 @@
+{% extends 'plantilla.html' %}
+{% load widget_tweaks %}
+{% load static %}
+{% block head %}
+    <link href="{% static 'lib/jquery-ui-1.12.1/jquery-ui.min.css' %}" rel="stylesheet"/>
+    <script src="{% static 'lib/jquery-ui-1.12.1/jquery-ui.min.js' %}"></script>
+
+    <link href="{% static 'lib/select2-4.0.13/css/select2.min.css' %}" rel="stylesheet"/>
+    <link href="{% static 'lib/select2-4.0.13/css/select2-bootstrap4.min.css' %}" rel="stylesheet"/>
+    <script src="{% static 'lib/select2-4.0.13/js/select2.min.js' %}"></script>
+    <script src="{% static 'lib/select2-4.0.13/js/i18n/es.js' %}"></script>
+{% endblock %}
+{% block content %}
+<form method="post" action="." enctype="multipart/form-data">
+    <div class="card card-primary">
+        <div class="card-header">
+            <h3 class="card-title">
+                <i class="fas fa-plus"></i>
+                {{ title }}
+            </h3>
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <label>Cliente:</label>
+                {{ form.cliente }}
+            </div>
+            <div class="form-group">
+                <label>Vehiculo:</label>
+                {{ form.vehiculo }}
+            </div>
+
+            <div class="form-group">
+                <label>KILOMETRAJE:</label>
+                <input type="text" name="...">
+            </div>
+
+            <div class="form-group">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-header border-0">
+                                    <span class="text-bold text-lg"><H1>LLANTAS</H1></span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="card">
+                                                        <ul>
+                                                            <li><input type="checkbox" name="..."> ALINEADO</li>
+                                                            <li><input type="checkbox" name="..."> BALANCEADO</li>
+                                                            <li><input type="checkbox" name="..."> ROTACIÓN</li>
+                                                        </ul>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-lg-6">
+
+                                                    <div class="card">
+                                                        <ul>
+                                                            <li><input type="checkbox" name="..."> ALINEADO</li>
+                                                            <li><input type="checkbox" name="..."> BALANCEADO</li>
+                                                            <li><input type="checkbox" name="..."> ROTACIÓN</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- /.d-flex -->
+
+                                    <div class="position-relative mb-4">
+                                        <div class="chartjs-size-monitor">
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.card -->
+
+                            <div class="card">
+                                <div class="card-header border-0">
+                                    <span class="text-bold text-lg"><H1>SUSPENSION</H1></span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="card">
+                                                        <ul>
+                                                            <li><input type="checkbox" name="..."> ALINEADO</li>
+                                                            <li><input type="checkbox" name="..."> BALANCEADO</li>
+                                                            <li><input type="checkbox" name="..."> ROTACIÓN</li>
+                                                        </ul>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-lg-6">
+
+                                                    <div class="card">
+                                                        <ul>
+                                                            <li><input type="checkbox" name="..."> ALINEADO</li>
+                                                            <li><input type="checkbox" name="..."> BALANCEADO</li>
+                                                            <li><input type="checkbox" name="..."> ROTACIÓN</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- /.d-flex -->
+
+                                    <div class="position-relative mb-4">
+                                        <div class="chartjs-size-monitor">
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.card -->
+                        </div>
+                        <!-- /.col-md-6 -->
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-header border-0">
+                                    <span class="text-bold text-lg"><H1>CAMBIO DE ACEITES</H1></span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="card">
+                                                        <ul>
+                                                            <li><input type="checkbox" name="..."> MOTOR</li>
+                                                            <li><input type="checkbox" name="..."> CAJA</li>
+                                                            <li><input type="checkbox" name="..."> CORONA</li>
+                                                        </ul>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-lg-6">
+
+                                                    <div class="card">
+                                                        <ul>
+                                                            <li><input type="checkbox" name="..."> ALINEADO</li>
+                                                            <li><input type="checkbox" name="..."> BALANCEADO</li>
+                                                            <li><input type="checkbox" name="..."> ROTACIÓN</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- /.d-flex -->
+
+                                    <div class="position-relative mb-4">
+                                        <div class="chartjs-size-monitor">
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.card -->
+
+                            <div class="card">
+                                <div class="card-header border-0">
+                                    <span class="text-bold text-lg"><H1>FRENOS</H1></span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="card">
+                                                        <ul>
+                                                            <li><input type="checkbox" name="..."> ALINEADO</li>
+                                                            <li><input type="checkbox" name="..."> BALANCEADO</li>
+                                                            <li><input type="checkbox" name="..."> ROTACIÓN</li>
+                                                        </ul>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-lg-6">
+
+                                                    <div class="card">
+                                                        <ul>
+                                                            <li><input type="checkbox" name="..."> ALINEADO</li>
+                                                            <li><input type="checkbox" name="..."> BALANCEADO</li>
+                                                            <li><input type="checkbox" name="..."> ROTACIÓN</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- /.d-flex -->
+
+                                    <div class="position-relative mb-4">
+                                        <div class="chartjs-size-monitor">
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.col-md-6 -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <input type="submit" value="ingrese los valores">
+</form>
+<script>
+        var select_vehiculo = $('select[name="vehiculo"]');
+
+	$(function () {
+			$('.select2').select2({
+            theme:"bootstrap4",
+            language: 'es'
+        });
+
+			$('select[name="cliente"]').on('change', function () {
+                var id = $(this).val();
+                var options = '<option value="">--------------------</option>';
+                if (id === '') {
+                    select_vehiculo.html(options);
+                    return false;
+                }
+                $.ajax({
+                    url: window.location.pathname,
+                    type: 'POST',
+                    data: {
+                        'action': 'search_product_id',
+                        'id': id
+                    },
+                    dataType: 'json',
+                }).done(function (data) {
+                    if (!data.hasOwnProperty('error')) {
+                        select_vehiculo.html('').select2({
+                            theme: "bootstrap4",
+                            language: 'es',
+                            data: data
+                        });
+                        /*$.each(data, function (key, value) {
+                            options+='<option value="'+value.id_vehiculo+'">'+'Placa: '+value.placa+'</option>';
+                        });*/
+                        return false;
+                    }
+                    message_error(data.error);
+                }).fail(function (jqXHR, textStatus, errorThrown) {
+                    alert(textStatus + ': ' + errorThrown);
+                }).always(function (data) {
+                    //select_products.html(options);
+                });
+        });
+
+
+			var availableTags = [
+                "ActionScript",
+                "AppleScript",
+                "Asp",
+                "BASIC",
+                "C",
+                "C++",
+                "Clojure",
+                "COBOL",
+                "ColdFusion",
+                "Erlang",
+                "Fortran",
+                "Groovy",
+                "Haskell",
+                "Java",
+                "JavaScript",
+                "Lisp",
+                "Perl",
+                "PHP",
+                "Python",
+                "Ruby",
+                "Scala",
+                "Scheme"
+            ];
+
+			$('input[name="search"]').autocomplete({
+                source: function (request, response) {
+                    $.ajax({
+                        url: window.location.pathname,
+                        type: 'POST',
+                        data: {
+                            'action': 'autocomplete',
+                            'term': request.term
+                        },
+                        dataType: 'json',
+                    }).done(function (data) {
+                        response(data);
+                    }).fail(function (jqXHR, textStatus, errorThrown) {
+                        //alert(textStatus + ': ' + errorThrown);
+                    }).always(function (data) {
+
+                    });
+                },
+                delay: 500,
+                minLength: 1,
+                select: function (event, ui) {
+                    console.log(ui.item);
+                }
+            });
+
+            $('select[name="search"]').select2({
+                theme: "bootstrap4",
+                language: 'es',
+                allowClear: true,
+                ajax: {
+                    delay: 250,
+                    type: 'POST',
+                    url: window.location.pathname,
+                    data: function (params) {
+                        var queryParameters = {
+                            term: params.term,
+                            action: 'autocomplete'
+                        }
+                        return queryParameters;
+                    },
+                    processResults: function (data) {
+                        return {
+                            results: data
+                        };
+                    },
+                },
+                placeholder: 'Ingrese una descripción',
+                minimumInputLength: 1,
+            });
+        });
+
+</script>
+{% endblock %}

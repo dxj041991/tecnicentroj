@@ -1,0 +1,374 @@
+{% extends 'plantilla.html' %}
+{% load widget_tweaks %}
+{% load static %}
+{% block head %}
+    <link href="{% static 'lib/jquery-ui-1.12.1/jquery-ui.min.css' %}" rel="stylesheet"/>
+    <script src="{% static 'lib/jquery-ui-1.12.1/jquery-ui.min.js' %}"></script>
+
+    <link href="{% static 'lib/select2-4.0.13/css/select2.min.css' %}" rel="stylesheet"/>
+    <link href="{% static 'lib/select2-4.0.13/css/select2-bootstrap4.min.css' %}" rel="stylesheet"/>
+    <script src="{% static 'lib/select2-4.0.13/js/select2.min.js' %}"></script>
+    <script src="{% static 'lib/select2-4.0.13/js/i18n/es.js' %}"></script>
+{% endblock %}
+{% block content %}
+<form method="post"  enctype="multipart/form-data">
+ {%csrf_token %}
+
+    <div class="card card-primary">
+        <div class="card-header">
+            <h3 class="card-title">
+                <i class="fas fa-plus"></i>
+                {{ title }}
+            </h3>
+        </div>
+        <br>
+    <div class="form-group">
+
+
+         </div>
+        <div class="card-body">
+            <div class="form-group">
+                <label>Fecha de servicio:</label>
+                 {{ form.fecha }}
+
+            </div>
+            <div class="form-group">
+                <label>Vehiculo:</label>
+                {{ form.veh }}
+
+            </div>
+
+            <div class="form-group">
+                <label>KILOMETRAJE:</label>
+               {{ form.kilo }}
+
+            </div>
+
+            <div class="form-group">
+                <label>TRABAJO A REALIZAR:</label>
+                {{ form.descr }}
+
+            </div>
+
+             <div class="form-group">
+                <label>estado:</label>
+                {{ form.Estado }}
+
+            </div>
+            <div class="form-group">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-header border-0">
+                                    <span class="text-bold text-lg"><H1>LLANTAS</H1></span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="card">
+                                                        <ul>
+                                                            <li> <input type="checkbox" value="ALINEADO" class="chkcvalues"><strong><FONT FACE="times new roman" SIZE=4 COLOR="blue"> ALIENADO</FONT></strong></li>
+                                                            <li><input type="checkbox" value="BALANCEADO" class="chkcvalues"><strong><FONT FACE="times new roman" SIZE=4 COLOR="blue"> BALANCEADO</FONT></strong> </li>
+                                                            <li><input type="checkbox" value="ROTACIÓN" class="chkcvalues"><strong><FONT FACE="times new roman" SIZE=4 COLOR="blue"> ROTACION</FONT></strong></li>
+                                                            <li><input type="checkbox" value="ENLLANTADO" class="chkcvalues"><strong><FONT FACE="times new roman" SIZE=4 COLOR="blue"> ENLLANTADO</FONT></strong></li>
+                                                        </ul>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-lg-6">
+
+                                                    <div class="card">
+
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- /.d-flex -->
+
+                                    <div class="position-relative mb-4">
+                                        <div class="chartjs-size-monitor">
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.card -->
+
+                            <div class="card">
+                                <div class="card-header border-0">
+                                    <span class="text-bold text-lg"><H1>SUSPENSION</H1></span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="card">
+                                                        <ul>
+                                                            <li><input type="checkbox" value="CAMBIO RODILLO" class="chkcvalues"><strong><FONT FACE="times new roman" SIZE=4 COLOR="blue"> CAMBIO DE RODILLO</FONT></strong></li>
+                                                            <li><input type="checkbox" value="CAMBIO AMORTIGUADORES" class="chkcvalues"><strong><FONT FACE="times new roman" SIZE=4 COLOR="blue"> CAMBIO AMORTIGUADORES</FONT></strong></li>
+                                                            <br>
+                                                        </ul>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-lg-6">
+
+                                                    <div class="card">
+                                                        <ul>
+                                                             <li><input type="checkbox" value="CHEQUEO RODILLO" class="chkcvalues"><strong><FONT FACE="times new roman" SIZE=4 COLOR="blue"> CHEQUEO DE RODILLO</FONT></strong></li>
+                                                            <li><input type="checkbox" value="CHEQUEO AMORTIGUADORES" class="chkcvalues"><strong><FONT FACE="times new roman" SIZE=4 COLOR="blue"> CHEQUEO AMORTIGUADORES</FONT></strong></li>
+                                                            <br>
+                                                        </ul>
+                                                    </div>
+                                                    <br>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- /.d-flex -->
+
+                                    <div class="position-relative mb-4">
+                                        <div class="chartjs-size-monitor">
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="card">
+                                <div class="card-header border-0">
+                                    <span class="text-bold text-lg"><H1>MECANICA GENERAL</H1></span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="card">
+                                                        <ul>
+                                                            <li><input type="checkbox" value="CHEQUEO BASE MOTOR" class="chkcvalues"><strong><FONT FACE="times new roman" SIZE=4 COLOR="blue"> CHEQUEO BASE MOTOR</FONT></strong></li>
+                                                            <li><input type="checkbox" value="CAMBIO BASE MOTOR" class="chkcvalues"><strong><FONT FACE="times new roman" SIZE=4 COLOR="blue"> CAMBIO BASE MOTOR</FONT></strong></li>
+                                                            <li><input type="checkbox" value="CAMBIO PLATO MESA INFERIOR." class="chkcvalues"><strong><FONT FACE="times new roman" SIZE=4 COLOR="blue"> CAMBIO PLATO MESA INFE.</FONT></strong></li>
+                                                            <li><input type="checkbox" value="CAMBIO PLATO MESA SUPERIOR." class="chkcvalues"><strong><FONT FACE="times new roman" SIZE=4 COLOR="blue"> CAMBIO PLATO MESA SUPE.</FONT></strong></li>
+
+                                                        </ul>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-lg-6">
+
+                                                    <div class="card">
+                                                        <ul>
+                                                            <li> <input type="checkbox" value="CHEQUEO DE BANDA" class="chkcvalues"><strong><FONT FACE="times new roman" SIZE=4 COLOR="blue"> CHEQUEO DE BANDA</FONT></strong></li>
+                                                            <li> <input type="checkbox" value="CAMBIO DE BANDA" class="chkcvalues"><strong><FONT FACE="times new roman" SIZE=4 COLOR="blue"> CAMBIO DE BANDA</FONT></strong></li>
+                                                            <li> <input type="checkbox" value="CHEQUEO CRUCETA" class="chkcvalues"><strong><FONT FACE="times new roman" SIZE=4 COLOR="blue"> CHEQUEO CRUZETA</FONT></strong></li>
+                                                            <li> <input type="checkbox" value="CAMBIO CRUCETA" class="chkcvalues"><strong><FONT FACE="times new roman" SIZE=4 COLOR="blue"> CAMBIO CRUCETA</FONT></strong></li>
+                                                            <li> <input type="checkbox" value="SOLDADURA ESCAPE" class="chkcvalues"><strong><FONT FACE="times new roman" SIZE=4 COLOR="blue"> SOLDADURA ESCAPE</FONT></strong></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- /.d-flex -->
+
+                                    <div class="position-relative mb-4">
+                                        <div class="chartjs-size-monitor">
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.card -->
+                        </div>
+                        <!-- /.col-md-6 -->
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-header border-0">
+                                    <span class="text-bold text-lg"><H1>CAMBIO DE ACEITES</H1></span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="card">
+                                                        <ul>
+                                                            <li><input type="checkbox" value="CAMBIO ACEITE MOTOR" class="chkcvalues"><strong><FONT FACE="times new roman" SIZE=4 COLOR="blue"> MOTOR</FONT></strong></li>
+
+                                                            <li><input type="checkbox" value="CAMBIO ACEITE CAJA" class="chkcvalues"><strong><FONT FACE="times new roman" SIZE=4 COLOR="blue"> CAJA</FONT></strong></li>
+
+                                                            <li><input type="checkbox" value="CAMBIO ACEITE CORONA" class="chkcvalues"><strong><FONT FACE="times new roman" SIZE=4 COLOR="blue"> CORONA</FONT></strong></li>
+                                                            <BR>
+                                                        </ul>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-lg-6">
+
+                                                    <div class="card">
+
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- /.d-flex -->
+
+                                    <div class="position-relative mb-4">
+                                        <div class="chartjs-size-monitor">
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.card -->
+
+                            <div class="card">
+                                <div class="card-header border-0">
+                                    <span class="text-bold text-lg"><H1>FRENOS</H1></span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="card">
+                                                        <ul>
+                                                            <li><input type="checkbox" value="CHEQUEO GENERAL FRENOS" class="chkcvalues"><strong><FONT FACE="times new roman" SIZE=4 COLOR="blue"> CHEQUEO GENERAL FRENOS</FONT></strong></li>
+                                                            <li><input type="checkbox" value="CAMBIO FRENO DELANTERO" class="chkcvalues"><strong><FONT FACE="times new roman" SIZE=4 COLOR="blue"> CAMBIO FRENO DELANTERO</FONT></strong></li>
+                                                            <li><input type="checkbox" value="CAMBIO FRENO POSTERIOR" class="chkcvalues"><strong><FONT FACE="times new roman" SIZE=4 COLOR="blue"> CAMBIO FRENO POSTERIOR</FONT></strong></li>
+
+                                                        </ul>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="col-lg-6">
+
+                                                    <div class="card">
+                                                        <ul>
+                                                            <li> <input type="checkbox" value="CHEQUEO BOMBA DE FRENO" class="chkcvalues"><strong><FONT FACE="times new roman" SIZE=4 COLOR="blue"> CHEQUEO BOMBA DE FRENO</FONT></strong></li>
+                                                            <li> <input type="checkbox" value="CHEQUEO BOMBA DE EMBRAGUE" class="chkcvalues"><strong><FONT FACE="times new roman" SIZE=4 COLOR="blue"> CHEQUEO BOMBA DE EMBRA.</FONT></strong></li>
+                                                            <li> <input type="checkbox" value="CAMBIO BOMBA DE FRENO" class="chkcvalues"><strong><FONT FACE="times new roman" SIZE=4 COLOR="blue"> CAMBIO BOMBA DE FRENO</FONT></strong></li>
+                                                            <li> <input type="checkbox" value="CAMBIO BOMBA DE EMBRAGUE" class="chkcvalues"><strong><FONT FACE="times new roman" SIZE=4 COLOR="blue"> CAMBIO BOMBA DE EMBRA.</FONT></strong></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- /.d-flex -->
+
+                                    <div class="position-relative mb-4">
+                                        <div class="chartjs-size-monitor">
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <!-- /.col-md-6 -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+            </div>
+            {{ form.Estado }}
+
+        </div>
+    </div>
+
+    <div class="card-footer">
+                <button type="submit" class="btn btn-primary btn-flat">
+                    <i class="fas fa-save"></i> Guardar registro
+                </button>
+                <a href="" class="btn btn-danger btn-flat">
+                    <i class="fas fa-times"></i> Cancelar
+                </a>
+            </div>
+</form>
+<script>
+        var select_vehiculo = $('select[name="vehiculo"]');
+
+	$(function () {
+			$('.select2').select2({
+            theme:"bootstrap4",
+            language: 'es'
+        });
+
+			$('input[name="veh"]').autocomplete({
+                source: function (request, response) {
+                    $.ajax({
+                        url: window.location.pathname,
+                        type: 'POST',
+                        data: {
+                            'action': 'autocomplete',
+                            'term': request.term
+                        },
+                        dataType: 'json',
+                    }).done(function (data) {
+                        response(data);
+                    }).fail(function (jqXHR, textStatus, errorThrown) {
+                        //alert(textStatus + ': ' + errorThrown);
+                    }).always(function (data) {
+
+                    });
+                },
+                delay: 500,
+                minLength: 1,
+                select: function (event, ui) {
+                    console.log(ui.item);
+                }
+            });
+     });
+</script>
+<script>
+$(document).ready(function()
+{
+$('.chkcvalues').click(function(){
+    var txt="";
+    $('.chkcvalues:checked').each(function()
+	{
+        txt+=$(this).val()+","
+        });
+        $('#id_descr').val(txt);
+    });
+});
+</script>
+
+{% endblock %}
