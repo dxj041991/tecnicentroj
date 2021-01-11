@@ -2,467 +2,197 @@
 <!doctype html>
 <html class="no-js" lang="">
     <head>
+
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>Tecnicentro Jimenez</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="{% static 'lib/pagina_principal/css/reset.css'%}" type="text/css" media="screen">
+		<link rel="stylesheet" href="{% static 'lib/pagina_principal/css/style.css'%}" type="text/css" media="screen">
+		<link rel="stylesheet" href="{% static 'lib/pagina_principal/css/grid.css'%}" type="text/css" media="screen">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-	<!--[if lt IE 9]> <script src="{% static 'lib/pagina_principal/js/html5shiv.js'%}"></script>
-	<script src="{% static 'lib/pagina_principal/js/respond.min.js'%}"></script> <![endif]-->
-        <!-- Place favicon.ico in the root directory -->
-		<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="{% static 'lib/pagina_principal/css/normalize.css'%}">
-        <link rel="stylesheet" href="{% static 'lib/pagina_principal/css/main.css'%}">
-        <link rel="stylesheet" href="{% static 'lib/pagina_principal/css/bootstrap.min.css'%}">
-        <link rel="stylesheet" href="{% static 'lib/pagina_principal/css/font-awesome.min.css'%}">
-        <link rel="stylesheet" href="{% static 'lib/pagina_principal/css/owl.carousel.css'%}">
-        <link rel="stylesheet" href="{% static 'lib/pagina_principal/css/responsive.css'%}">
-        <link rel="stylesheet" href="{% static 'lib/pagina_principal/css/style.css'%}">
+		<script src="{% static 'lib/pagina_principal/js/jquery-1.7.1.min.js'%}" type="text/javascript"></script>
+		<script src="{% static 'lib/pagina_principal/js/cufon-yui.js'%}" type="text/javascript"></script>
+		<script src="{% static 'lib/pagina_principal/js/cufon-replace.js'%}" type="text/javascript"></script>
+		<script src="{% static 'lib/pagina_principal/js/Vegur_500.font.js'%}" type="text/javascript"></script>
+		<script src="{% static 'lib/pagina_principal/FF-cash.js'%}" type="text/javascript"></script>
+		<script src="{% static 'lib/pagina_principal/js/tms-0.3.js'%}" type="text/javascript"></script>
+		<script src="{% static 'lib/pagina_principal/js/tms_presets.js'%}" type="text/javascript"></script>
+		<script src="{% static 'lib/pagina_principal/js/jquery.easing.1.3.js'%}" type="text/javascript"></script>
+		<script src="{% static 'lib/pagina_principal/js/jquery.equalheights.js'%}" type="text/javascript"></script>
 
     </head>
 <body >
-		 <!-- start preloader -->
-        <div id="loader-wrapper">
-            <div class="logo"></div>
-            <div id="loader">
-            </div>
+<div class="main-bg">
+  <div class="bg">
+    <!--==============================header=================================-->
+    <header>
+      <div class="main">
+        <div class="wrapper">
+          <h1>Tecnillanta Jimenez</h1>
+          <div class="fright">
+            <div class="indent"> <span class="address">29 de mayo </span> <span class="phone">Tel: +593 959 552 5963</span> </div>
+          </div>
         </div>
-        <!-- end preloader -->
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-		
-		
-<!-- Start Header Section -->
-<header class="main_menu_sec navbar navbar-default navbar-fixed-top">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-3 col-md-3 col-sm-12">
-				<div class="lft_hd">
-					<a href="index.html"><img src="{% static 'lib/pagina_principal/img/logo.png'%}" alt=""/></a>
-				</div>
-			</div>			
-			<div class="col-lg-9 col-md-9 col-sm-12">
-				<div class="rgt_hd">					
-					<div class="main_menu">
-						<nav id="nav_menu">
-							<button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							</button>	
-						<div id="navbar">
-							<ul>
-								<li><a class="page-scroll" href="principal.html">Inicio</a></li>
-								<li><a class="page-scroll" href="#abt_sec">Sobre Nosotros</a></li>
-								
-								<li><a class="page-scroll" href="#pr_sec">Nuestros Servicios</a></li>
-								<li><a class="page-scroll" href="#protfolio_sec">Nuestros Productos</a></li>
-								<li><a class="page-scroll" href="#ctn_sec">Contactenos</a></li>
-								<li><a class="page-scroll" href=""><i class="fa fa-user"></i> Ingresar al sistema</a></li>
-							</ul>
-						</div>		
-						</nav>			
-					</div>					
-						
-				</div>
-			</div>	
-		</div>	
-	</div>	
-</header>
-<!-- End Header Section -->
+        <nav>
+          <ul class="menu">
+            <li><a class="active" href="index.html">Inicio</a></li>
+            <li><a href="#">Sobre Nosotros</a></li>
+            <li><a href="#">Mantenimientos </a></li>
 
-<!-- start slider Section -->
-<section id="slider_sec">
-	<div class="container">
-		<div class="row">
-			<div class="slider">
-					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-				  <!-- Indicators -->
-				  <ol class="carousel-indicators">
-					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-				  </ol>
-
-				  <!-- Wrapper for slides -->
-				  <div class="carousel-inner" role="listbox">
-					<div class="item active">
-						<div class="wrap_caption">
-						  <div class="caption_carousel">
-							<h1>Tecnillanta Jimenez</h1>
-							<p>Trabajos profesionales para el cuidado de su vehículo en la ciudad de Macas</p>
-						  </div>						
-						</div>
-					</div>					
-					<div class="item">
-						<div class="wrap_caption">
-						  <div class="caption_carousel">
-							<h1>Cuidado de Motor</h1>
-							<p>Tecnillanta Jimenez, se preocupa por el cuidado de su vehículo, por ello brinda lla mejor calidad en repuestos para su motor</p>
-						  </div>						
-						</div>
-					</div>					
-					<div class="item ">
-						<div class="wrap_caption">
-						  <div class="caption_carousel">
-							<h1>Mejores Precios</h1>
-							<p>los precios de nuestra empresa son de los mas bajos del mercado, pero manteniendo la calidad de cada uno de sus productos</p>
-						  </div>						
-						</div>
-					</div>			
-				  </div>
-
-				  <!-- Controls -->
-				  <a class="left left_crousel_btn" href="#carousel-example-generic" role="button" data-slide="prev">
-					<i class="fa fa-angle-left"></i>
-					<span class="sr-only">Anterior</span>
-				  </a>
-				  <a class="right right_crousel_btn" href="#carousel-example-generic" role="button" data-slide="next">
-					<i class="fa fa-angle-right"></i>
-					<span class="sr-only">Siguiente</span>
-				  </a>
-				</div>
-			</div>	
-		</div>			
-	</div>	
-</section>
-<!-- End slider Section -->
-
-<!-- start about Section -->
-<section id="abt_sec">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
-				<div class="title_sec">
-					<h1>Sobre Nosostros</h1>
-					<h2>MACAS, MORONA SANTIAGO-ECUADOR</h2>
-				</div>			
-			</div>		
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
-				<div class="abt">
-					<p>Tecnillanta Jimenez es una empresa ecuatoriana con 5 años de experiencia en el mercado, con su sede principal en Macas, ofreciendo servicio tecnico para Vehiculos , las 24 horas los 365 días del año.</p>
-				</div>
-			</div>			
-		</div>
-	</div>
-</section>
-
-<section id="pr_sec">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
-				<div class="title_sec">
-					<h1>NUESTROS SERVICIOS</h1>
-					<h2>PERSONAL CALIFICADO A SU SERVICIO</h2>
-				</div>			
-			</div>		
-			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-				<div class="service">						
-					<i class="fa fa-truck"></i>
-					<h2>LLANTAS</h2>
-					<div class="service_hoverly">
-						<i class="fa fa-truck"></i>
-						<h2>LLANTAS DE TODAS LA MARCAS</h2>
-						<p>Llantas de todas las marcas, precios económicos, eso no quieren prescindir de la calidad y el diseño moderno, llantas diseñadas para ciudad y carretera. Tenemos un stock permanente de llantas de última generación con tecnología de punta, modelos nuevos y control de calidad internacional, aros, baterías, ventas de aros deportivos en todas las medidas.</p>
-					</div>
-				</div>
-			</div>				
-			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-				<div class="service">						
-					<i class="fa fa-wrench"></i>
-					<h2>ABC MOTORS</h2>
-					<div class="service_hoverly">
-						<i class="fa fa-wrench"></i>
-						<h2>ABC MOTORS</h2>
-						<p>ABC Motors, ABC de frenos, enderezada de ompacto cámber o cáster, ABC motor, limpieza de inyectores ultrasonido, scanner. Cambio de aceitey filtros, cambio de grasa de cajas y diferencial, engrase, cambio de filtros de habitáculo, cambio de líquido hidráulico, revisión de niveles.
-						Utilizamos filtros y aceites de primeras marcas solo en envases cerrados que no generan humedad.</p>
-					</div>
-				</div>
-			</div>				
-			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-				<div class="service">						
-					<i class="fa fa-car"></i>
-					<h2>ALINEACIÓN Y BALANCEO</h2>
-					<div class="service_hoverly">
-						<i class="fa fa-car"></i>
-						<h2>ALINEACIÓN Y BALANCEO</h2>
-						<p>
-Si su vehículo vibra, usted al manejar siente que se carga hacia un lado, son señales que requiere el servicio de alineación y balanceo, la alineación es ajustar las relaciones y ángulos entre los componentes de las suspensión, dirección y ruedas, para que ruede adecuadamente sin gastar excesivamente los neumáticos. El balanceo es la forma de contrapesar mediante pequeños pesos, normalmente de plomo, la falta de peso en un neumático.</p>
-					</div>
-				</div>
-			</div>				
-			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-				<div class="service">						
-					<i class="fa fa-ambulance"></i>
-					<h2>MECÁNICA RÁPIDA</h2>
-					<div class="service_hoverly">
-						<i class="fa fa-ambulance"></i>
-						<h2>MECÁNICA RÁPIDA</h2>
-						<p>
-Mecánica rápida, contamos con una larga y experimentada trayectoria en trabajos de mecánica rápida, cubrimos las necesidades que su vehículo necesite, revisiones y servicios de mecánica rápida o de bajo grado de dificultad en aspectos relacionados con el Motor, Transmisiones, Suspensiones y dirección, Frenos, entre otros.</p>
-					</div>
-				</div>
-			</div>			
-		</div>
-	</div>
-</section>
-<!-- End Service Section -->
-
-<!-- start portfolio Section -->
-<section id="protfolio_sec">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
-				<div class="title_sec">
-					<h1>NUESTROS PRODUCTOS</h1>
-					<h2>LA MAS ALTA VARIEDAD DE PRODUCTOS</h2>
-				</div>			
-			</div>		
-			<div class="col-lg-12">
-				<div class="portfolio-filter text-uppercase text-center">
-				<ul class="filter">
-				<li class="active" data-filter="*">Todos</li>
-				
-				</ul>
-				</div>
-				 
-				<div class="all-portfolios">
-					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
-					<div class="single-portfolio web-design">
-					<img class="img-responsive" src="{% static 'lib/pagina_principal/img/2.jpg'%}" alt="">
-					</div>				
-					</div>				
-					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
-					<div class="single-portfolio web-design">
-					<img class="img-responsive" src="{% static 'lib/pagina_principal/img/2.jpg'%}" alt="">
-					</div>				
-					</div>					
-					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
-					<div class="single-portfolio web-design">
-					<img class="img-responsive" src="{% static 'lib/pagina_principal/img/3.jpg'%}" alt="">
-					</div>				
-					</div>					
-					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
-					<div class="single-portfolio graphic">
-					<img class="img-responsive" src="{% static 'lib/pagina_principal/img/4.jpg'%}" alt="">
-					</div>				
-					</div>					
-					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
-					<div class="single-portfolio web-design">
-					<img class="img-responsive" src="{% static 'lib/pagina_principal/img/5.jpg'%}" alt="">
-					</div>				
-					</div>					
-					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
-					<div class="single-portfolio photography">
-					<img class="img-responsive" src="{% static 'lib/pagina_principal/img/6.jpg'%}" alt="">
-					</div>				
-					</div>				
-					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
-					<div class="single-portfolio web-design">
-					<img class="img-responsive" src="{% static 'lib/pagina_principal/img/7.jpg'%}" alt="">
-					</div>				
-					</div>				
-					<div class="col-sm-12  col-lg-12 col-md-12 col-xs-12 ">
-					<div class="single-portfolio web-design">
-					<img class="img-responsive" src="{% static 'lib/pagina_principal/img/8.jpg'%}" alt="">
-					</div>				
-					</div>				
-					
-				</div>
-
-
-			</div>
-				
-			</div>			
-		</div>
-</section>
-<!-- End Portfolio Section -->
-
-
-
-<!-- start contact us Section -->
-<section id="ctn_sec">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
-				<div class="title_sec">
-					<h1>CONTACTENOS</h1>
-					<h2>Contactenos para mayor información</h2>
-				</div>			
-			</div>		
-			<div class="col-sm-6"> 
-				<div id="cnt_form">
-					<form id="contact-form" class="contact" name="contact-form" method="post" action="send-mail.php">
-						<div class="form-group">
-						<input type="text" name="name" class="form-control name-field" required="required" placeholder="Your Name">
-						</div>
-						<div class="form-group">
-							<input type="email" name="email" class="form-control mail-field" required="required" placeholder="Your Email">
-						</div> 
-						<div class="form-group">
-							<textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Message"></textarea>
-						</div> 
-						<div class="form-group">
-							<button type="submit" class="btn btn-primary">Send</button>
-						</div>
-					</form> 
-				</div>
-			</div>
-			<div class="col-lg-6 col-md-6 col-sm-6">
-				<div class="cnt_info">
-					<ul>
-						<li><i class="fa fa-facebook"></i><p>121 King Street, Melbourne Victoria 3000 Australia</p></li>
-						<li><i class="fa fa-envelope"></i><p>contact@info.com</p></li>
-						<li><i class="fa fa-phone"></i><p>+0987654321 (+012345678)</p></li>
-					</ul>
-				</div>
-			</div>			
-		</div>
-	</div>
-</section>
-<!-- End contact us  Section -->
-
-<!-- start located map Section -->
-<section id="ltd_map_sec">
-<div class="container">
-	<div class="row">
-		<div class="col-lg-12">
-			<div class="map">						
-			<h1>localicenos en el mapa</h1><a href="#slidingDiv" class="show_hide" rel="#slidingDiv"><i class="fa fa-angle-up"></i></a>
-			<div id="slidingDiv">
-				<div class="map_area">
-					<div id="googleMap" style="width:100%;height:300px;"></div>
-				</div>
-			</div>	
-			</div>
-		</div>
-	</div>
+            <li><a href="#">Lista de precios</a></li>
+            <li><a href="#">Ubiquienos</a></li>
+            <li><a href="http://127.0.0.1:8000/login/">Login</a></li>
+          </ul>
+        </nav>
+        <div class="slider-wrapper">
+          <div class="slider">
+            <ul class="items">
+              <li> <img src="{% static 'lib/pagina_principal/images/slider-img1.jpg'%}" alt="" /> </li>
+              <li> <img src="{% static 'lib/pagina_principal/images/slider-img2.jpg'%}" alt="" /> </li>
+              <li> <img src="{% static 'lib/pagina_principal/images/slider-img3.jpg'%}" alt="" /> </li>
+            </ul>
+          </div>
+          <a class="prev" href="#">prev</a> <a class="next" href="#">next</a> </div>
+      </div>
+    </header>
+    <!--==============================content================================-->
+    <section id="content">
+      <div class="main">
+        <div class="container_12">
+          <div class="wrapper p5">
+            <article class="grid_4">
+              <div class="wrapper">
+                <figure class="img-indent"><img src="{% static 'lib/pagina_principal/images/page1-img1.png'%}" alt=""></figure>
+                <div class="extra-wrap">
+                  <h4>Reparacion de Motor</h4>
+                  <p class="p2">Lorem ipsum dolosit amet, consetetur sadipng elitr sed diam nonumy eirmod.</p>
+                  <a class="button" href="#">Mas inf.</a> </div>
+              </div>
+            </article>
+            <article class="grid_4">
+              <div class="wrapper">
+                <figure class="img-indent"><img src="{% static 'lib/pagina_principal/images/page1-img2.png'%}" alt=""></figure>
+                <div class="extra-wrap">
+                  <h4>Cambio de aceite</h4>
+                  <p class="p2">Tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+                  <a class="button" href="#">Mas inf.</a> </div>
+              </div>
+            </article>
+            <article class="grid_4">
+              <div class="wrapper">
+                <figure class="img-indent"><img src="{% static 'lib/pagina_principal/images/page1-img3.png'%}" alt=""></figure>
+                <div class="extra-wrap">
+                  <h4>Chequeo de frenos</h4>
+                  <p class="p2">No sea takimata sanctus est gorem ipsum dolor sit amet forem ipsum.</p>
+                  <a class="button" href="#">Mas inf.</a> </div>
+              </div>
+            </article>
+          </div>
+          <div class="container-bot">
+            <div class="container-top">
+              <div class="container">
+                <div class="wrapper">
+                  <article class="grid_8">
+                    <div class="indent-left">
+                      <h2>Bienvenido!</h2>
+                      <p class="prev-indent-bot"><strong>Tecnillanta Jimenez</strong> is one of free website templates created by TemplateMonster.com team. This website template is optimized for 1280X1024 screen resolution. It is also XHTML &amp; CSS valid. </p>
+                      <p class="border-bot">This Car Repair Template goes with two packages – with PSD source files and without them. PSD source files are available for free for the registered members of TemplatesMonster.com. The basic package (without PSD source) is available for anyone without registration.</p>
+                    </div>
+                    <div class="wrapper">
+                      <div class="grid_4 alpha">
+                        <div class="indent-left">
+                          <div class="maxheight indent-bot">
+                            <h3>Sobre Nosotos</h3>
+                            <p class="prev-indent-bot"><a class="link-1" href="#">Lorem ipsum dolor amet</a> conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                            <a class="link-1" href="#">Dolor amet conse ctetur</a> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat ut enim ad. </div>
+                          <a class="button" href="#">Mas inf.</a> </div>
+                      </div>
+                      <div class="grid_4 omega">
+                        <div class="indent-left2">
+                          <div class="maxheight indent-bot">
+                            <h3 class="p0">Nuestros Servicios</h3>
+                            <ul class="list-1">
+                              <li><a href="#">Complete Computer Diagnostics</a></li>
+                              <li><a href="#">Complete Safety Analysis</a></li>
+                              <li><a href="#">Drivability Problems</a></li>
+                              <li><a href="#">Oil Changes</a></li>
+                              <li><a href="#">Emission Repair Facility</a></li>
+                              <li><a href="#">Air Conditioning Service</a></li>
+                              <li><a href="#">Electrical Systems</a></li>
+                              <li><a href="#">Fleet Maintenance</a></li>
+                            </ul>
+                          </div>
+                          <a class="button" href="#">Mas inf.</a> </div>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="grid_4">
+                    <div class="indent-left2 indent-top">
+                      <div class="box p4">
+                        <div class="padding">
+                          <div class="wrapper">
+                            <figure class="img-indent"><img src="images/page1-img4.png" alt=""></figure>
+                            <div class="extra-wrap">
+                              <h3 class="p0">Nuestros Horarios:</h3>
+                            </div>
+                          </div>
+                          <p class="p1"><strong>24 Horas (emergencia)</strong></p>
+                          <p class="color-1 p0">Lunes - Sabados: 7:30 am - 6:00 pm</p>
+                          <p class="color-1 p1">Domingos: 7:30 am - Noon</p>
+                           </div>
+                      </div>
+                      <figure class="indent-bot">
+                        <iframe width="260" height="202" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Brooklyn,+New+York,+NY,+United+States&amp;aq=0&amp;sll=37.0625,-95.677068&amp;sspn=61.282355,146.513672&amp;ie=UTF8&amp;hq=&amp;hnear=Brooklyn,+Kings,+New+York&amp;ll=40.649974,-73.950005&amp;spn=0.01628,0.025663&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+                      </figure>
+                      <div class="indent-left">
+                        <dl class="main-address">
+                          <dt>Demolink.org 8901 Marmora Road,<br>
+                            Glasgow, D04 89GR.</dt>
+                          <dd><span>Telephone:</span> +1 959 552 5963;</dd>
+                          <dd><span>FAX:</span> +1 959 552 5963</dd>
+                          <dd><span>E-mail:</span><a href="#">mail@demolink.org</a></dd>
+                        </dl>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--==============================footer=================================-->
+    <footer>
+      <div class="main"> <span>Copyright &copy; <a href="#">AMASOFT</a> Derechos Reservados</span> Desarrollado por <a target="_blank" href="">Ing. Dario Jimenez</a> </div>
+    </footer>
+  </div>
 </div>
-</section>
-
-<!-- End located map  Section -->
-<!-- start footer Section -->
-<footer id="ft_sec">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class="ft">						
-					<ul>
-						<li><a href=""><i class="fa fa-facebook"></i></a></li>
-						<li><a href=""><i class="fa fa-twitter"></i></a></li>
-						<li><a href=""><i class="fa fa-dribbble"></i></a></li>
-						<li><a href=""><i class="fa fa-rss"></i></a></li>
-						<li><a href=""><i class="fa fa-flickr"></i></a></li>
-						<li><a href=""><i class="fa fa-pinterest"></i></a></li>
-						<li><a href=""><i class="fa fa-linkedin"></i></a></li>
-						<li><a href=""><i class="fa fa-skype"></i></a></li>
-						<li><a href=""><i class="fa fa-google"></i></a></li>
-					</ul>					
-				</div>
-				<ul class="copy_right">
-					<li>&copy;Amasoft</li>
-					<li>desarrollado por Dario Jimenez</li>
-				</ul>					
-			</div>	
-		</div>
-	</div>
-</footer>
-<!-- End footer Section -->
-
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-        <script src="{% static 'lib/pagina_principal/js/vendor/jquery-1.11.2.min.js'%}"></script>
-
-<script src="{% static 'lib/pagina_principal/js/isotope.pkgd.min.js'%}"></script>
-<script src="{% static 'lib/pagina_principal/js/bootstrap.min.js'%}"></script>
-<script src="{% static 'lib/pagina_principal/js/jquery-ui.js'%}"></script>
-<script src="{% static 'lib/pagina_principal/js/appear.js'%}"></script>
-<script src="{% static 'lib/pagina_principal/js/jquery.counterup.min.js'%}"></script>
-<script src="{% static 'lib/pagina_principal/js/waypoints.min.js'%}"></script>
-<script src="{% static 'lib/pagina_principal/js/owl.carousel.min.js'%}"></script>
-<script src="{% static 'lib/pagina_principal/js/showHide.js'%}"></script>
-<script src="{% static 'lib/pagina_principal/js/jquery.nicescroll.min.js'%}"></script>
-<script src="{% static 'lib/pagina_principal/js/jquery.easing.min.js'%}"></script>
-<script src="{% static 'lib/pagina_principal/js/scrolling-nav.js'%}"></script>
-<script src="{% static 'lib/pagina_principal/js/plugins.js'%}"></script>
-<!-- Google Map js -->
-        <script src="https://maps.googleapis.com/maps/api/js"></script>
-
-<script src="{% static 'lib/pagina_principal/js/main.js'%}"></script>
-
-<script src="{% static 'lib/pagina_principal/showHide.js'%}" type="text/javascript"></script>
-
-
 {% block javascript %}
-<script>
-			function initialize() {
-			  var mapOptions = {
-				zoom: 14,
-				scrollwheel: false,
-				center: new google.maps.LatLng(41.092586000000000000, -75.592688599999970000)
-			  };
-			  var map = new google.maps.Map(document.getElementById('googleMap'),
-				  mapOptions);
-			  var marker = new google.maps.Marker({
-				position: map.getCenter(),
-				animation:google.maps.Animation.BOUNCE,
-				icon: 'img/map-marker.png',
-				map: map
-			  });
-			}
-			google.maps.event.addDomListener(window, 'load', initialize);
-		</script>
+<script type="text/javascript">Cufon.now();</script>
 
-<script type="text/javascript'%}">
-
-$(document).ready(function(){
-
-
-   $('.show_hide').showHide({
-		speed: 1000,  // speed you want the toggle to happen
-		easing: '',  // the animation effect you want. Remove this line if you dont want an effect and if you haven't included jQuery UI
-		changeText: 1, // if you dont want the button text to change, set this to 0
-		showText: 'View',// the button text to show when a div is closed
-		hideText: 'Close' // the button text to show when a div is open
-
-	});
-
-
-});
-
-</script>
-<script>
-    jQuery(document).ready(function( $ ) {
-        $('.counter').counterUp({
-            delay: 10,
-            time: 1000
-        });
+<script type="text/javascript">
+$(window).load(function () {
+    $('.slider')._TMS({
+        duration: 1000,
+        easing: 'easeOutQuint',
+        preset: 'simpleFade',
+        slideshow: 7000,
+        banners: false,
+        pauseOnHover: true,
+        pagination: false,
+        pagNums: false,
+        nextBu: '.next',
+        prevBu: '.prev'
     });
-</script>
-
-<script>
-
-  //Hide Overflow of Body on DOM Ready //
-$(document).ready(function(){
-    $("body").css("overflow", "hidden");
-});
-
-// Show Overflow of Body when Everything has Loaded
-$(window).load(function(){
-    $("body").css("overflow", "visible");
-    var nice=$('html').niceScroll({
-	cursorborder:"5",
-	cursorcolor:"#00AFF0",
-	cursorwidth:"3px",
-	boxzoom:true,
-	autohidemode:true
-	});
-
 });
 </script>
+
     {% endblock %}
 
-    </body>
+</body>
+
+
+
+
 </html>

@@ -28,7 +28,10 @@ var vents = {
         $('input[name="ivacalc"]').val(this.items.iva.toFixed(2));
         $('input[name="total"]').val(this.items.total.toFixed(2));
     },
-
+    add: function (item) {
+        this.items.products.push(item);
+        this.list();
+    },
     list: function (item) {
     this.calculate_invoice();
     tblProducts = $('#tblProducts').DataTable({
@@ -122,6 +125,7 @@ var vents = {
     }
     };
 
+
 $(function () {
 $('.select2').select2({
             theme:"bootstrap4",
@@ -146,6 +150,8 @@ $("input[name='iva']").TouchSpin({
         vents.calculate_invoice();
     })
         .val(0.12);
+
+
 
 $('input[name="search"]').autocomplete({
                 source: function (request, response) {

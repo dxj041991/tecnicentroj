@@ -12,6 +12,8 @@ $(function () {
             },
             dataSrc: ""
         },
+
+
         columns: [
             {"data": "id_producto"},
             {"data": "nombre"},
@@ -26,9 +28,9 @@ $(function () {
                 class: 'text-center',
                 orderable: false,
                 render: function (data, type, row) {
-                    var buttons = '<a href="/core/producto/editar/' + row.id_producto + '/" class="btn btn-warning btn-xs btn-flat"><i class="fas fa-edit"></i></a> ';
-                    buttons += '<a href="/core/producto/eliminar/' + row.id_producto + '/" type="button" class="btn btn-danger btn-xs btn-flat"><i class="fas fa-trash-alt"></i></a>';
-                    return buttons;
+                    var buttons1 = '<a href="/core/producto/editar/' + row.id_producto + '/" class="btn btn-warning btn-xs btn-flat"><i class="fas fa-edit"></i></a> ';
+                    buttons1 += '<a href="/core/producto/eliminar/' + row.id_producto + '/" type="button" class="btn btn-danger btn-xs btn-flat"><i class="fas fa-trash-alt"></i></a>';
+                    return buttons1;
                 }
             },
 

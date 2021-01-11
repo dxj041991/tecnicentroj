@@ -16,6 +16,9 @@ class Cliente(models.Model):
     def __str__(self):
         return self.Cedula
 
+    def get_full_name(self):
+        return '{} / {}'.format(self.NombreCliente, self.Cedula)
+
     def toJSON(self):
         item = model_to_dict(self)
         return item

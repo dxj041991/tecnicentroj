@@ -11,6 +11,7 @@ app_name = 'core'
 urlpatterns = [
     #urls Producto
     path('producto/listar', productoListView.as_view(), name='category_list'),
+    path('producto/reporte', productoListView1.as_view(), name='category_list1'),
     path('producto/crear', ProductoCreateView.as_view(), name='crear_producto'),
     path('producto/editar/<int:pk>/', ActualizarProducto.as_view(), name='modifcar_producto'),
     path('producto/eliminar/<int:pk>/', ProductoDeleteView.as_view(), name='eliminar_producto'),

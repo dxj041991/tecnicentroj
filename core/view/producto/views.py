@@ -40,6 +40,44 @@ class productoListView(LoginRequiredMixin, ValidatePermissionRequiredMixin,ListV
         context['entity'] = 'Categorias'
         return context
 
+class productoListView1(LoginRequiredMixin, ValidatePermissionRequiredMixin,ListView):
+    permission_required = 'core.view_producto'
+    model = Producto
+    template_name = 'productos/reporte_productos.html'
+    @method_decorator(csrf_exempt)
+    def dispatch(self, request, *args, **kwargs):
+        return super().dispatch(request, *args, **kwargs)
+
+    def post(self, request, *args, **kwargs):
+        data = {}
+        try:
+            action = request.POST['action']
+            if action == 'searchdata':
+                data = []
+                search = Producto.objects.all()
+
+                for p in search:
+                    data.append([
+                        p.id_producto,
+                        p.nombre,
+                        p.precioVenta,
+                        p.stock,
+                        p.observaciones
+                    ])
+            else:
+                data['error'] = 'Ha ocurrido un error'
+        except Exception as e:
+            data['error'] = str(e)
+        return JsonResponse(data, safe=False)
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['title'] = 'Listado de Productos'
+        context['create_url'] = reverse_lazy('core:crear_producto')
+        context['list_url'] = reverse_lazy('core:category_list')
+        context['entity'] = 'Categorias'
+        return context
+
 class ProductoCreateView(CreateView):
     model = Producto
     form_class = ProductForm
